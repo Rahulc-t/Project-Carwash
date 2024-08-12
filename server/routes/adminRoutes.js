@@ -84,10 +84,8 @@ const upload = multer({ storage: storage });
 // Route to get all reviews (admin only)
 router.get("/review-admin", verifyToken, async (req, res) => {
     try {
-        if (req.email == "admin2001") {
             const data = await contactUs.find();
             res.send(data);
-        }
     } catch (error) {
         console.log(error);
         res.status(500).send({ error: "Internal Server Error" });
@@ -97,12 +95,12 @@ router.get("/review-admin", verifyToken, async (req, res) => {
 // Route to get appointments by date (admin only)
 router.post("/appointment-print", verifyToken, async (req, res) => {
     try {
-        if (req.email == "admin2001") {
+      
             const { date } = req.body;
             const appointments = await appoint.find({ date });
             console.log(appointments);
             res.status(200).send(appointments);
-        }
+        
     } catch (error) {
         console.log(error);
         res.status(500).send({ error: "Internal Server Error" });
