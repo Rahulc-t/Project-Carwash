@@ -6,6 +6,16 @@
 This project is a real-time web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Docker for containerization. 
 The application allows users to create accounts, book appointments, and send reviews the garage owners
 
+---
+
+## 🎥 Demo Video
+
+Check out our live demo! 🎬👇
+
+[![CertiDapp](https://img.youtube.com/vi/IKcs5MEJS4w/0.jpg)](https://youtu.be/IKcs5MEJS4w)
+
+---
+
 * Features *
 
 
